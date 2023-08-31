@@ -14,6 +14,11 @@
         .rounded-bottom {
             clip-path: ellipse(100% 70% at 50% 20%);
         }
+        .corner-cut {
+            width: 200px;
+            min-height: 200px;
+            clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 75%, 5% 0);
+        }
     </style>
 </head>
 <body class="bg-[#160E2A]">
@@ -53,6 +58,7 @@
         </section>
     </header>
     <main>
+        <!-- World Map -->
         <section class="text-white my-10">
             <div class="flex justify-center items-center relative mb-12">
                 <div class="relative left-12 top-1 w-20 h-20 rounded-full bg-gradient-to-b from-[#5100ff] to-[#eb3cff]"></div>
@@ -73,6 +79,102 @@
                     <button class="bg-[rgba(0,0,0,0.9)] px-6 py-2 rounded-md">View All Collectors</button>
                 </div>
             </div>
+        </section>
+        <!-- Latest NFT Collections -->
+        <section class="flex text-white gap-28 mt-48 h-[800px]">
+            <div class="w-2/4 relative">
+                <div class="w-[400px] h-[400px] bg-gradient-to-t from-[#7501f9] to-[#77189a] rounded-full absolute mt-[200px] blur-[150px] z-[-1]"></div>
+                <!-- nft images -->
+                <div class="w-[200px] h-[200px] bg-gradient-to-br from-[#5100ff] to-[#eb3cff] flex items-center justify-center absolute top-0 left-[100px] z-10">
+                    <img  src="/assets/Image 1.png" alt="God">
+                </div>
+                <div class="w-[200px] h-[200px] bg-gradient-to-r from-[#242424] to-[#444444] flex items-end justify-center absolute left-[150px] top-[350px] z-10">
+                    <img src="/assets/Avatar 1.png" alt="Soldier">
+                </div>
+                <div class="w-[200px] h-[200px] flex items-end justify-center absolute left-[430px] top-[100px]">
+                    <img class="z-10" src="/assets/merlin.png" alt="Merlin">
+                </div>
+                <div class="w-[200px] h-[200px] flex items-end justify-center absolute left-[450px] top-[450px]">
+                    <img class="z-10" src="/assets/Avatar2.png" alt="Alien">
+                </div>
+                <!-- Borders -->
+                <div class="w-[200px] h-[250px] border-2 border-stone-400  flex flex-col px-5 corner-cut absolute top-[40px] left-[70px]">
+                    <p class="mt-[175px] font-medium text-base pb-1">Ancient Ones</p>
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="IconChangeColor" height="200" width="200"><path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                        <p class="font-medium">5.0 ETH</p>
+                    </div>
+                </div>
+                <div class="w-[200px] h-[250px] border-2 border-stone-400 flex flex-col px-5 corner-cut absolute top-[140px] left-[410px]">
+                    <p class="mt-[175px] font-medium text-base pb-1">Lost In Space</p>
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="IconChangeColor" height="200" width="200"><path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                        <p class="font-medium">3.0 ETH</p>
+                    </div>
+                </div>
+                <div class="w-[200px] h-[250px] border-2 border-stone-400 flex flex-col px-5 corner-cut absolute top-[390px] left-[120px]">
+                    <p class="mt-[175px] font-medium text-base pb-1">God of War</p>
+                    <div class="flex items-center">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="IconChangeColor" height="200" width="200"><path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                        <p class="font-medium">7.0 ETH</p>
+                    </div>
+                </div>
+                <div class="w-[200px] h-[250px] border-2 border-stone-400 flex flex-col px-5 corner-cut absolute top-[490px] left-[425px]">
+                    <p class="mt-[175px] font-medium text-base pb-1">The Watchers</p>
+                    <div class="flex items-center"> 
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="IconChangeColor" height="200" width="200"><path d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z" id="mainIconPathAttribute" fill="#ffffff"></path></svg>
+                        <p class="font-medium">3.2 ETH</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="self-center mt-48">
+                <div class="flex items-center justify-center mb-16">
+                    <div class="relative left-12 top-1 w-20 h-20 rounded-full bg-gradient-to-b from-[#5100ff] to-[#eb3cff]"></div>
+                    <h1 class="text-5xl z-10 font-sans">Latest NFT Collections</h1>
+                </div>  
+                <p class="text-2xl w-3/4 pl-40  m-auto leading-9 text-[#6c8f6c] font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolorum et voluptatem sint. Magnam, ipsam in blanditiis ipsum numquam corporis.</p>
+                <div class="flex pl-72 mt-12">
+                    <div class="w-fit bg-gradient-to-r from-[#00bfff] to-[#e11bff] px-[2px] py-[2px] rounded-lg">
+                        <button class="bg-[rgba(0,0,0,0.9)] px-6 py-2 rounded-md">View All Collectors</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Why choose us -->
+        <section class="flex gap-32 w-10/12 my-40 bg-gray-950 text-white rounded-r-full py-28 border border-purple-500 border-l-transparent">
+            <div class="w-2/5 ml-10">
+                <div class="flex items-center relative mb-12">
+                    <div class="w-20 h-20 rounded-full bg-gradient-to-b from-[#5100ff] to-[#eb3cff]"></div>
+                    <h1 class="relative -left-16 -top-1  text-5xl z-10 font-sans">Why Choose Us?</h1>
+                </div>
+                <p class="text-[#7cb67c] text-xl font-light leading-8 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, ducimus eaque. Pariatur nesciunt aspernatur dolorem, officia obcaecati praesentium sint voluptatem possimus tempore magni commodi incidunt nisi voluptatum </p>
+                <p class="text-[#7cb67c] text-xl font-light leading-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veniam maxime inventore sunt, sit hic exercitationem ipsum asperiores molestias eius.</p>
+            </div>
+            <div class="w-2/5 self-center">
+                <div class="grid grid-cols-2 items-center gap-5 relative left-5 mb-10">
+                    <div class="border-[1px] border-[#6b6a6ac1] bg-[#ffffff06] px-5 py-8 flex flex-col gap-2 items-center h-fit rounded-lg ">
+                        <img class="h-16 w-16" src="/assets/simple-icons_marketo.png" alt="">
+                        <h2 class="text-lg text-blue-100">Marketplace</h2>
+                    </div>
+                    <div class="border-[1px] border-[#6b6a6ac1] bg-[#ffffff06] px-5 py-8 flex flex-col gap-2 items-center h-fit rounded-lg ">
+                        <img class="h-16 w-16" src="/assets/simple-icons_marketo.png" alt="">
+                        <h2 class="text-lg text-blue-100">Money Protected</h2>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 items-center gap-10 relative left-16">
+                    <div class="border-[1px] border-[#6b6a6ac1] bg-[#ffffff06] px-5 py-8 flex flex-col gap-2 items-center h-fit rounded-lg ">
+                        <img class="h-12 w-12" src="/assets/Vector2.png" alt="">
+                        <h2 class="text-lg text-blue-100">Data Protected</h2>
+                    </div>
+                    <div class="border-[1px] border-[#6b6a6ac1] bg-[#ffffff06] px-5 py-8 flex flex-col gap-2 items-center h-fit rounded-lg z-50 ">
+                        <img class="h-12 w-12" src="/assets/healthicons.png" alt="">
+                        <h2 class="text-lg text-blue-100">Fast & Secure</h2>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     
