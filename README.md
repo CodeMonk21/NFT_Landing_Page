@@ -21,7 +21,7 @@ To view the project, follow these steps:
 
 3. Launch the `index.html` inside the public folder in web browser
 ## Links
-* Repository: https://github.com/CodeMonk21/E-Guru.git
+* Repository: https://github.com/CodeMonk21/NFT_Landing_Page.git
 * Remix Icon: https://remixicon.com/
 ## Versioning
 1.0.0.0
